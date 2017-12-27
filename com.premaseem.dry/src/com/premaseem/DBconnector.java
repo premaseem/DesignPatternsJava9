@@ -15,32 +15,9 @@ import org.bson.Document;
 
 public class DBconnector {
 
-    MongoDatabase mongoDatabase = null;
-    MongoDatabase designPatternsdb = null;
-
-    public DBconnector(){
+    public static MongoCollection<Document> getDBconnection () {
         MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
         MongoDatabase designPatternsdb = mongoClient.getDatabase("designPatterns");
-    }
-
-    public MongoCollection<Document> getTable(String tableName){
-        return designPatternsdb.getCollection(tableName);
-    }
-
-
-    public MongoDatabase getMongoDatabase () {
-        return mongoDatabase;
-    }
-
-    public void setMongoDatabase (MongoDatabase mongoDatabase) {
-        this.mongoDatabase = mongoDatabase;
-    }
-
-    public MongoDatabase getDesignPatternsdb () {
-        return designPatternsdb;
-    }
-
-    public void setDesignPatternsdb (MongoDatabase designPatternsdb) {
-        this.designPatternsdb = designPatternsdb;
+        return designPatternsdb.getCollection("employees");
     }
 }
