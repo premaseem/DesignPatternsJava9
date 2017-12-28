@@ -2,6 +2,8 @@
 package com.com.premaseem.inheritance;
 
 import com.com.premaseem.inheritance.model.Developer;
+import com.com.premaseem.inheritance.model.Hr;
+import com.com.premaseem.inheritance.model.QE;
 
 /*
 @author: Aseem Jain
@@ -11,10 +13,14 @@ import com.com.premaseem.inheritance.model.Developer;
 */
 public class Client {
     public static void main (String[] args) {
-        Developer employee1 = new Developer("Aseem",
-                20,100);
-        System.out.println("Inheritence concept");
+        Developer employee1 = new Developer("Aseem", 20,100);
+        QE employee2 = new QE("Aseem", 20,100);
+        Hr employee3 = new Hr("Aseem", 20,100);
+
+        System.out.println("Inheritance concept");
         System.out.println(employee1);
+        System.out.println(employee2);
+        System.out.println(employee3);
     }
 
 }

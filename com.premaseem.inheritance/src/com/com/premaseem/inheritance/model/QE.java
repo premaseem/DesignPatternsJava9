@@ -6,14 +6,14 @@ package com.com.premaseem.inheritance.model;
 @link: https://premaseem.wordpress.com/category/computers/design-patterns/
 @copyright: 2018 Packt Publication
 */
-public class Developer {
+public class QE {
 
     private String name;
     private Float salary;
     private Integer workHours;
     private Integer rate;
 
-    public Developer(String name, Integer workHours, Integer rate) {
+    public QE (String name, Integer workHours, Integer rate) {
         this.name = name;
         this.workHours = workHours;
         this.rate = rate;
@@ -21,12 +21,17 @@ public class Developer {
 
     @Override
     public String toString() {
-        return "Developer{" +
+        return "QE{" +
                 "name='" + name + '\'' +
                 ", salary=" + getSalary() +
                 ", workHours=" + workHours +
                 ", rate=" + rate +
                 '}';
+    }
+
+    public Float getSalary() {
+        salary = (float)workHours * rate;
+        return salary;
     }
 
     public String getName() {
@@ -35,11 +40,6 @@ public class Developer {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Float getSalary() {
-        salary = (float)workHours * rate;
-        return salary;
     }
 
 
