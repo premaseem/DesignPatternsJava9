@@ -26,7 +26,7 @@ public class Employee {
     }
 
     private static void listEmployees() {
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
+        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27018"));
         MongoDatabase designPatternsdb = mongoClient.getDatabase("designPatterns");
         MongoCollection<Document> employees = designPatternsdb.getCollection("employees");
         FindIterable<Document> documents = employees.find();
@@ -36,7 +36,7 @@ public class Employee {
     }
 
     private static void countEmployees() {
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
+        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27018"));
         MongoDatabase designPatternsdb = mongoClient.getDatabase("designPatterns");
         MongoCollection<Document> employees = designPatternsdb.getCollection("employees");
         long count = employees.count();
@@ -51,16 +51,16 @@ public class Employee {
         emp1.put("createdDate", new Date());
 
         Document emp2 = new Document();
-        emp1.put("name","Meera Jain");
-        emp1.put("role","Manager");
-        emp1.put("createdDate", new Date());
+        emp2.put("name","Meera Jain");
+        emp2.put("role","Manager");
+        emp2.put("createdDate", new Date());
 
         Document emp3 = new Document();
-        emp1.put("name","Sony Jain");
-        emp1.put("role","QE");
-        emp1.put("createdDate", new Date());
+        emp3.put("name","Sony Jain");
+        emp3.put("role","QE");
+        emp3.put("createdDate", new Date());
 
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27017"));
+        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb://localhost:27018"));
         MongoDatabase designPatternsdb = mongoClient.getDatabase("designPatterns");
         MongoCollection<Document> employees = designPatternsdb.getCollection("employees");
 
