@@ -12,11 +12,15 @@ public class Employee {
     protected Integer workHours;
     protected Integer rate;
     private Float salary;
+    protected Integer baseSalary;
+    protected Integer bonusPercent;
 
-    public Employee (String name, Integer rate, Integer workHours) {
+    public Employee (String name, Integer rate, Integer workHours,Integer baseSalary,Integer bonusPercent) {
         this.name = name;
         this.rate = rate;
         this.workHours = workHours;
+        this.baseSalary = baseSalary;
+        this.bonusPercent = bonusPercent;
     }
 
     public String getName() {

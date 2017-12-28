@@ -8,8 +8,8 @@ package com.com.premaseem.inheritance.model;
 */
 public class Hr extends Employee{
 
-    public Hr (String name, Integer workHours, Integer rate) {
-        super(name, rate, workHours);
+    public Hr (String name, Integer baseSalary, Integer bonusPercent) {
+        super(name,null,null, baseSalary, bonusPercent);
     }
 
     @Override
