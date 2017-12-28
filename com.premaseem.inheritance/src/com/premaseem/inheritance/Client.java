@@ -5,18 +5,18 @@
 @copyright: 2018 Packt Publication
 */
 
-package com.com.premaseem.inheritance;
+package com.premaseem.inheritance;
 
-import com.com.premaseem.inheritance.model.Developer;
-import com.com.premaseem.inheritance.model.Hr;
-import com.com.premaseem.inheritance.model.QE;
+import com.premaseem.inheritance.model.Developer;
+import com.premaseem.inheritance.model.Hr;
+import com.premaseem.inheritance.model.QE;
 
 
 public class Client {
     public static void main (String[] args) {
         Developer employee1 = new Developer("Aseem", 20,100);
         QE employee2 = new QE("Aseem", 20,100);
-        Hr employee3 = new Hr("Aseem", 20,100);
+        Hr employee3 = new Hr("Sony",1000,10);
 
         System.out.println("Inheritance concept");
         System.out.println(employee1);

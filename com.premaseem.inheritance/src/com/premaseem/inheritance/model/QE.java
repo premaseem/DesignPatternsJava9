@@ -1,4 +1,4 @@
-package com.com.premaseem.inheritance.model;
+package com.premaseem.inheritance.model;
 
 /*
 @author: Aseem Jain
@@ -6,9 +6,9 @@ package com.com.premaseem.inheritance.model;
 @link: https://premaseem.wordpress.com/category/computers/design-patterns/
 @copyright: 2018 Packt Publication
 */
-public class Developer extends Employee{
+public class QE extends Employee{
 
-    public Developer(String name, Integer workHours, Integer rate) {
+    public QE (String name, Integer workHours, Integer rate) {
         super(name, rate, workHours,null,null);
     }
 

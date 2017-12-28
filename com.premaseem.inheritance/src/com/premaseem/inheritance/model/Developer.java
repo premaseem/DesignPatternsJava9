@@ -1,4 +1,4 @@
-package com.com.premaseem.inheritance.model;
+package com.premaseem.inheritance.model;
 
 /*
 @author: Aseem Jain
@@ -6,15 +6,15 @@ package com.com.premaseem.inheritance.model;
 @link: https://premaseem.wordpress.com/category/computers/design-patterns/
 @copyright: 2018 Packt Publication
 */
-public class Hr extends Employee{
+public class Developer extends Employee{
 
-    public Hr (String name, Integer baseSalary, Integer bonusPercent) {
-        super(name,null,null, baseSalary, bonusPercent);
+    public Developer(String name, Integer workHours, Integer rate) {
+        super(name, rate, workHours,null,null);
     }
 
     @Override
     public String toString() {
-        return "Hr{" +
+        return "Developer{" +
                 "name='" + getName() + '\'' +
                 ", salary=" + getSalary() +
                 ", workHours=" + getWorkHours() +

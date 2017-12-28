@@ -1,4 +1,4 @@
-package com.com.premaseem.inheritance.model;
+package com.premaseem.inheritance.model;
 
 /*
 @author: Aseem Jain
@@ -31,8 +31,13 @@ public class Employee {
         this.name = name;
     }
 
+
     public Float getSalary() {
-        salary = (float)workHours * rate;
+        if (this.getClass().getName().equalsIgnoreCase("com.premaseem.inheritance.model.Hr") ){
+            salary = (float) baseSalary + bonusPercent;
+        }else{
+            salary = (float) workHours * rate;
+        }
         return salary;
     }
 
