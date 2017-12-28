@@ -9,7 +9,7 @@ package com.com.premaseem.inheritance.model;
 public class QE extends Employee{
 
     public QE (String name, Integer workHours, Integer rate) {
-        super(name, rate, workHours);
+        super(name, rate, workHours,null,null);
     }
 
     @Override
