@@ -6,56 +6,21 @@ package com.com.premaseem.inheritance.model;
 @link: https://premaseem.wordpress.com/category/computers/design-patterns/
 @copyright: 2018 Packt Publication
 */
-public class Hr {
-
-    private String name;
-    private Float salary;
-    private Integer workHours;
-    private Integer rate;
+public class Hr extends Employee{
 
     public Hr (String name, Integer workHours, Integer rate) {
-        this.name = name;
-        this.workHours = workHours;
-        this.rate = rate;
+        super(name, rate, workHours);
     }
 
     @Override
     public String toString() {
-        return "HR{" +
-                "name='" + name + '\'' +
+        return "Hr{" +
+                "name='" + getName() + '\'' +
                 ", salary=" + getSalary() +
-                ", workHours=" + workHours +
-                ", rate=" + rate +
+                ", workHours=" + getWorkHours() +
+                ", rate=" + getRate() +
                 '}';
     }
 
-    public Float getSalary() {
-        salary = (float)workHours * rate;
-        return salary;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
-    public Integer getWorkHours() {
-        return workHours;
-    }
-
-    public void setWorkHours(Integer workHours) {
-        this.workHours = workHours;
-    }
-
-    public Integer getRate() {
-        return rate;
-    }
-
-    public void setRate(Integer rate) {
-        this.rate = rate;
-    }
 }
