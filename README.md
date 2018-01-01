@@ -1,3 +1,7 @@
+# Video 1.9: Fundamental concepts of code reusability
+The code in this branch was used in video 1.9 of video course Design patterhs with Java 9. 
+This brach contains code to demonstrate fundamental concepts of code reusability. 
+
 # Design Principles
 Software design principles represent a set of guidelines that helps us to avoid having a bad design.
 
