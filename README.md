@@ -1,3 +1,6 @@
+# Video 1.8: Issues faced due to force fitting everything in object inheritance
+In the branch, inheritance is expalined with its issues. Needs Java 9 and mongodb setup to run the example. 
+
 # Definition of inheritance
 Inheritance is a mechanism in which one object acquires all the properties and behaviours of the parent object. Inheritance allows programmers to create classes that are built upon existing classes, to specify a new implementation to maintain the same behaviour to reuse code.
 
