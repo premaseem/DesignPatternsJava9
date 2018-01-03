@@ -12,7 +12,7 @@ public class CyclomatricComplexity {
 
     public static void main (String[] args) {
 
-        Integer a=7,b=4,c=10,d=8;
+        Integer a=7,b=4,c=10,d=18;
 
         if (a > b) {
             if(a > c){
