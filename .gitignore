@@ -1,10 +1,10 @@
 # Compiled class file
 .idea/*
 *.class
-*.iml
+
 # Log file
 *.log
-
+*.iws
 # BlueJ files
 *.ctxt
 
