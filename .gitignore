@@ -4,7 +4,7 @@ bin/*
 *.class
 # Log file
 *.log
-
+*.iws
 # BlueJ files
 *.ctxt
 
