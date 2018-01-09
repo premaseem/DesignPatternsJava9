@@ -6,12 +6,22 @@ package com.premaseem;
 @link: https://premaseem.wordpress.com/category/computers/design-patterns/
 */
 public class Calculator {
-static int num = 0;
-    public Calculator(){
-        num++;
-        System.out.println(num+ " wasting memory with new object");
+    static int num = 0;
+    private static Calculator instance = null;
+
+    public static Calculator getInstance(){
+        if (instance == null){
+            instance = new Calculator();
+        }
+        return instance;
     }
-    public Integer add(Integer sum, Integer number){
+
+    private Calculator () {
+        num++;
+        System.out.println(num + " wasting memory with new object");
+    }
+
+    public Integer add (Integer sum, Integer number) {
         return sum + number;
     }
 }

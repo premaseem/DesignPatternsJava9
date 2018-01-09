@@ -16,7 +16,7 @@ public class Client {
     private static Integer calculateSum () {
         Integer sum = 0;
         for (int i =0; i< 1000; i++){
-            Calculator calc = new Calculator();
+            Calculator calc = Calculator.getInstance();
             sum = calc.add(sum,i);
         }
         return sum;
