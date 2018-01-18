@@ -8,6 +8,14 @@ package com.premaseem;
 */
 public class Client {
     public static void main (String[] args) {
+        System.out.println("Singleton cook example ");
+        Cook cook1 = new Cook();
+        Cook cook2 = new Cook();
+        Cook cook3 = new Cook();
+
+        cook1.makeBroth();
+        cook2.makeBroth();
+        cook3.makeBroth();
 
     }
 }
