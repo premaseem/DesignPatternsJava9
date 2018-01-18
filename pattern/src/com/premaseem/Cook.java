@@ -8,10 +8,19 @@ package com.premaseem;
 */
 public class Cook {
 
-    public Cook(){
+    private Cook(){
 
     }
 
+    private static Cook uniqueInstance = null;
+
+    public static Cook getInstance(){
+
+        if(uniqueInstance == null){
+            uniqueInstance = new Cook();
+        }
+        return uniqueInstance;
+    }
     boolean saltAdded = false;
 
     public void makeBroth(){

@@ -9,9 +9,9 @@ package com.premaseem;
 public class Client {
     public static void main (String[] args) {
         System.out.println("Singleton cook example ");
-        Cook cook1 = new Cook();
-        Cook cook2 = new Cook();
-        Cook cook3 = new Cook();
+        Cook cook1 = Cook.getInstance();
+        Cook cook2 = Cook.getInstance();
+        Cook cook3 = Cook.getInstance();
 
         cook1.makeBroth();
         cook2.makeBroth();
