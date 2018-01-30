@@ -23,6 +23,7 @@ public class Architect {
         houseBuilder.addPlumbingSystem();
         houseBuilder.addAirConditionerSystem();
         houseBuilder.addSecuritySystem();
+        houseBuilder.paintHouse("white");
     }
 
     public House getFinishedHouse(){

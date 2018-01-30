@@ -18,8 +18,8 @@ public class Client {
         // Hiding complexity and building one bed room house
         architect.setHouseBuilder(new OneBedroomHouseBuilder());
         architect.buildHouse();
-        House oneBedRoomHouse = architect.getFinishedHouse();
-        System.out.println(oneBedRoomHouse);
+        House house = architect.getFinishedHouse();
+        System.out.println(house);
 
     }
 }
