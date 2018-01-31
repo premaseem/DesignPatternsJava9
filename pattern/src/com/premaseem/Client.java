@@ -38,10 +38,10 @@ public class Client {
 //        }
 
         // Crisp, reusable, centralized code using factory
-        IceCreamFactory iceCreamFactory = new IceCreamFactory();
+        // IceCreamFactory iceCreamFactory = new IceCreamFactory();
 
         // Virtual constructor ( takes care of configuration )
-        iceCream = iceCreamFactory.createIceCream(iceCreamChoice);
+        iceCream = IceCreamFactory.createIceCream(iceCreamChoice);
 
 //        Repeatative code to even print
 //        System.out.print("Ice cream of your choice is ");

@@ -12,7 +12,7 @@ import com.premaseem.icecreams.StrawberryIceCream;
 
 public class IceCreamFactory {
 
-    public IceCream createIceCream(String iceCreamChoice){
+    static public IceCream createIceCream(String iceCreamChoice){
         IceCream iceCream = null;
 
         if (iceCreamChoice.equalsIgnoreCase("Strawberry")){
