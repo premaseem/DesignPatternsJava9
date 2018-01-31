@@ -39,7 +39,9 @@ public class Client {
 
         // Crisp, reusable, centralized code using factory
         IceCreamFactory iceCreamFactory = new IceCreamFactory();
-        iceCreamFactory.createIceCream(iceCreamChoice);
+
+        // Virtual constructor ( takes care of configuration )
+        iceCream = iceCreamFactory.createIceCream(iceCreamChoice);
 
 //        Repeatative code to even print
 //        System.out.print("Ice cream of your choice is ");
@@ -53,6 +55,12 @@ public class Client {
 
         System.out.print("Ice cream of your choice is "+ iceCream.getIceCreamName());
         System.out.println(iceCream);
+
+        System.out.println("Lessons Learnt");
+        System.out.println("Creation is easy and simplified with virtual constructor");
+        System.out.println("Centralized code easy to maintain and extend");
+        System.out.println("Loosely coupled code with interface");
+        System.out.println("Polymorphism in full force");
 
     }
 }
