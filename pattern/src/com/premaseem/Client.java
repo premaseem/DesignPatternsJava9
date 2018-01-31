@@ -8,6 +8,7 @@ package com.premaseem;
 */
 
 import com.premaseem.icecreams.ChocolateIceCream;
+import com.premaseem.icecreams.IceCream;
 import com.premaseem.icecreams.StrawberryIceCream;
 
 import java.util.Scanner;
@@ -20,28 +21,38 @@ public class Client {
         System.out.println("Chocolate");
 
         Scanner scan = new Scanner(System.in);
-
-        // Tight coupling
-        StrawberryIceCream strawberryIceCream =null;
-        ChocolateIceCream chocolateIceCream = null;
-
-        // Sphegati code with if else ladder
         String iceCreamChoice =   scan.next();
-        if (iceCreamChoice.equalsIgnoreCase("Strawberry")){
-            strawberryIceCream = new StrawberryIceCream();
-        }else if (iceCreamChoice.equalsIgnoreCase("Chocolate")){
-            chocolateIceCream = new ChocolateIceCream();
-        }
 
-        // Ice cream of your choice is :
-        System.out.print("Ice cream of your choice is ");
-        if (strawberryIceCream != null){
-            System.out.println(strawberryIceCream);
-        }
+//        Tight coupling
+//        StrawberryIceCream strawberryIceCream =null;
+//        ChocolateIceCream chocolateIceCream = null;
 
-        if (chocolateIceCream != null){
-            System.out.println(chocolateIceCream);
-        }
+        // Loose coupling using interface
+        IceCream iceCream = null;
+
+//        Sphegati code with if else ladder
+//        if (iceCreamChoice.equalsIgnoreCase("Strawberry")){
+//            strawberryIceCream = new StrawberryIceCream();
+//        }else if (iceCreamChoice.equalsIgnoreCase("Chocolate")){
+//            chocolateIceCream = new ChocolateIceCream();
+//        }
+
+        // Crisp, reusable, centralized code using factory
+        IceCreamFactory iceCreamFactory = new IceCreamFactory();
+        iceCreamFactory.createIceCream(iceCreamChoice);
+
+//        Repeatative code to even print
+//        System.out.print("Ice cream of your choice is ");
+//        if (strawberryIceCream != null){
+//            System.out.println(strawberryIceCream);
+//        }
+//
+//        if (chocolateIceCream != null){
+//            System.out.println(chocolateIceCream);
+//        }
+
+        System.out.print("Ice cream of your choice is "+ iceCream.getIceCreamName());
+        System.out.println(iceCream);
 
     }
 }
