@@ -23,7 +23,10 @@ public class Client {
 
         // Ear plug is not able to take google phone sound signal
         Integer soundSignals = googlePhone.getSoundOutput();
-        earPlug.takeSoundInput(soundSignals);
+
+        // Created adapter to convert signals expected by client
+        EarPlugAdapter earPlugAdapter = new EarPlugAdapter();
+        earPlug.takeSoundInput(earPlugAdapter.convertSoundSignal(soundSignals));
 
     }
 }
