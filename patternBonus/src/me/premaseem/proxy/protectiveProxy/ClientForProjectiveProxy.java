@@ -58,7 +58,7 @@ public class ClientForProjectiveProxy {
 			}
 			System.out.println("=============================");
 
-			System.out.println("Press 1 for further treatment and 0 for EXIT .... ");
+			System.out.println("Press 1 to continue and 0 for EXIT .... ");
 			try {
 				repeatRunFlag = scan.nextInt();
 			} catch (Exception e) {
