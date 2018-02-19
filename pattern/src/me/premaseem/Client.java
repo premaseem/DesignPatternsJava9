@@ -1,5 +1,6 @@
 package me.premaseem;
 
+import me.premaseem.remotes.MasterRemoteFacade;
 import me.premaseem.remotes.SetTopBoxRemote;
 import me.premaseem.remotes.SoundSystemRemote;
 import me.premaseem.remotes.TVRemote;
@@ -13,19 +14,21 @@ public class Client {
     public static void main (String[] args) {
         System.out.println("Master Remote Facade ");
 
-        // Client is tightly coupled with sub systems
-        TVRemote tvRemote = new TVRemote();
-        SoundSystemRemote soundSystemRemote = new SoundSystemRemote();
-        SetTopBoxRemote setTopBoxRemote = new SetTopBoxRemote();
+        // decoupled systems from client and moved to facade
+        MasterRemoteFacade masterRemoteFacade = new MasterRemoteFacade();
 
-        // Turning ON requires several calls
-        tvRemote.trunOn();
-        soundSystemRemote.trunOn();
-        setTopBoxRemote.trunOn();
+        // Facade simplified code and reduced complexity
+        masterRemoteFacade.turnOn();
+        masterRemoteFacade.turnOFF();
 
-        // Turning OFF requires several calls
-        tvRemote.trunOn();
-        soundSystemRemote.trunOn();
-        setTopBoxRemote.trunOn();
+//        // Turning ON requires several calls
+//        tvRemote.trunOn();
+//        soundSystemRemote.trunOn();
+//        setTopBoxRemote.trunOn();
+//
+//        // Turning OFF requires several calls
+//        tvRemote.trunOn();
+//        soundSystemRemote.trunOn();
+//        setTopBoxRemote.trunOn();
     }
 }
