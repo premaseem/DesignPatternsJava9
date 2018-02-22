@@ -24,18 +24,12 @@ public abstract class BridgeRemoteControl {
     public void setChannel (int channel) {
         tv.switchProgram(channel);
     }
-}
 
-class LogitechRemoteControl extends BridgeRemoteControl {
-    public LogitechRemoteControl (ITV tv) {
-        super(tv);
-    }
-
-    public void setChannelKeyboard (int channel) {
-        setChannel(channel);
-        System.out.println("Logitech use keyword to set channel.");
+    public void recordProgram(){
+        System.out.println("IndependentRemoteControl use keyword to set channel.");
     }
 }
+
 
 class IndependentRemoteControl extends BridgeRemoteControl {
     public IndependentRemoteControl (ITV tv) {
@@ -44,8 +38,10 @@ class IndependentRemoteControl extends BridgeRemoteControl {
 
     public void setChannelKeyboard (int channel) {
         setChannel(channel);
-        System.out.println("Logitech use keyword to set channel.");
+        System.out.println("IndependentRemoteControl use keyword to set channel.");
     }
+
+
 }
 
 

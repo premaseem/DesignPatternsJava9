@@ -7,12 +7,25 @@ package com.premaseem;
 */
 public class Client {
     public static void main (String[] args) {
-        System.out.println("Bridge cook example ");
+        System.out.println("Bridge design pattern example ");
         ITV tv = new SonyTV();
-        // DependentRemoteControl sub classes TV interface
-        // and is forced to change even with minor changes in TV interface
-        DependentRemoteControl remote = new DependentRemoteControl();
-        remote.on();
-        remote.switchProgram(23);
+
+        // Bridge between Remote and TV interface helps both of them to
+        // evolve independently
+        IndependentRemoteControl remote = new IndependentRemoteControl(tv);
+        remote.turnOn();
+        remote.setChannel(7);
+        remote.turnOff();
+        // additional methods
+        remote.recordProgram();
+
+
+/*
+//        // DependentRemoteControl sub classes TV interface
+//        // and is forced to change even with minor changes in TV interface
+//        DependentRemoteControl remote = new DependentRemoteControl();
+//        remote.on();
+//        remote.switchProgram(23);
+ */
     }
 }
