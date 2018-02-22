@@ -8,6 +8,12 @@ package com.premaseem;
 */
 public class Client {
     public static void main (String[] args) {
-        System.out.println("Singleton cook example ");
+        System.out.println("Bridge cook example ");
+        ITV tv = new SonyTV();
+        // DependentRemoteControl sub classes TV interface
+        // and is forced to change even with minor changes in TV interface
+        DependentRemoteControl remote = new DependentRemoteControl();
+        remote.on();
+        remote.switchChannel(23);
     }
 }
