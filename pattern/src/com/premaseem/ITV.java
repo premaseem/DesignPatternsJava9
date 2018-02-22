@@ -11,7 +11,7 @@ public interface ITV {
 
     public void off ();
 
-    public void switchChannel (int channel);
+    public void switchProgram (int channel);
 }
 
 class SamsungTV implements ITV {
@@ -26,7 +26,7 @@ class SamsungTV implements ITV {
     }
 
     @Override
-    public void switchChannel (int channel) {
+    public void switchProgram (int channel) {
         System.out.println("Samsung: channel - " + channel);
     }
 }
@@ -44,7 +44,7 @@ class SonyTV implements ITV {
     }
 
     @Override
-    public void switchChannel (int channel) {
+    public void switchProgram (int channel) {
         System.out.println("Sony: channel - " + channel);
     }
 }

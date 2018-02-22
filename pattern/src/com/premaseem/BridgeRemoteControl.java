@@ -22,7 +22,7 @@ public abstract class BridgeRemoteControl {
     }
 
     public void setChannel (int channel) {
-        tv.switchChannel(channel);
+        tv.switchProgram(channel);
     }
 }
 
@@ -61,7 +61,7 @@ class DependentRemoteControl implements ITV {
     }
 
     @Override
-    public void switchChannel (int channel) {
+    public void switchProgram (int channel) {
         System.out.println(" Forced to change, if TV interface changes ");
     }
 
