@@ -7,6 +7,7 @@ package com.premaseem;
 */
 public abstract class BridgeRemoteControl {
 
+    // Introduced has a relationship
     private ITV tv;
 
     public BridgeRemoteControl (ITV tv) {
@@ -25,6 +26,7 @@ public abstract class BridgeRemoteControl {
         tv.switchProgram(channel);
     }
 
+    // additional features
     public void recordProgram(){
         System.out.println("IndependentRemoteControl use keyword to set channel.");
     }
@@ -44,7 +46,7 @@ class IndependentRemoteControl extends BridgeRemoteControl {
 
 }
 
-
+// coupled implementation of remote controller
 class DependentRemoteControl implements ITV {
     @Override
     public void on () {
