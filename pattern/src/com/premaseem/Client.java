@@ -9,6 +9,28 @@ public class Client {
     public static void main (String[] args) {
         System.out.println("Flyweight design pattern using ** STAR WARS **  example");
 
+        // Create Landscape object which is responsible to display stars
+        Landscape landscape = new Landscape();
+
+        // Factory will provide star based on param
+        // Note: Factory will cache objects for reuse
+        // and will create new object only when it does not exist in cache.
+        Star star = StarFactory.getStar("dull");
+
+        landscape.displayStar(star,65,87);
+
+        // No new object needs to be created, Factory provides reusable object
+        // from cache which landscape displays
+        landscape.displayStar(StarFactory.getStar("bright"),34,43);
+        landscape.displayStar(StarFactory.getStar("bright"),36,47);
+        landscape.displayStar(StarFactory.getStar("dull"),34,43);
+        landscape.displayStar(StarFactory.getStar("dim"),34,43);
+        landscape.displayStar(StarFactory.getStar("dim"),34,43);
+
+
+
+
+        /* OLD Scrapped code
         // Created 1000 stars with brightness level bright
         Star brightStar1 = new Star("bright");
         Star brightStar2 = new Star("bright");
@@ -51,5 +73,6 @@ public class Client {
         landscape.displayStar(dullStar2,34,45);
         landscape.displayStar(dullStar3,23,55);
         landscape.displayStar(dullStar1000,34,45);
+    */
     }
 }

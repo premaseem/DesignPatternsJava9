@@ -5,12 +5,59 @@ package com.premaseem;
 @title: Design Patterns with Java 9
 @link: https://premaseem.wordpress.com/category/computers/design-patterns/
 */
-public class Star {
+public interface Star {
+    void displayBrightness ();
+}
 
-     String brightness;
+class BrightStar implements Star {
 
-    public Star (String brightness) {
-        this.brightness = brightness;
+    private String brightness;
+
+    public BrightStar () {
+        this.brightness = "bright";
+    }
+
+    @Override
+    public void displayBrightness () {
+        System.out.println("Star with brightness :" + brightness);
+    }
+
+    @Override
+    public String toString () {
+        return "Star with brightness :" + brightness;
+    }
+}
+
+class DimStar implements Star {
+
+    private String brightness;
+
+    public DimStar () {
+        this.brightness = "dim";
+    }
+
+    @Override
+    public void displayBrightness () {
+        System.out.println("Star with brightness :" + brightness);
+    }
+
+    @Override
+    public String toString () {
+        return "Star with brightness :" + brightness;
+    }
+}
+
+class DullStar implements Star {
+
+    private String brightness;
+
+    public DullStar () {
+        this.brightness = "dull";
+    }
+
+    @Override
+    public void displayBrightness () {
+        System.out.println("Star with brightness :" + brightness);
     }
 
     @Override
