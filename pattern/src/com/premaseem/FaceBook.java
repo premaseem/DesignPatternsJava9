@@ -2,6 +2,7 @@ package com.premaseem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /*
 @author: Aseem Jain
@@ -20,7 +21,42 @@ public class FaceBook {
         friendsList.add("Super Man");
     }
 
-    public List<String> getFriendsList () {
-        return friendsList;
+//    public List<String> getFriendsList () {
+//        return friendsList;
+//    }
+
+    public Iterator getIterator() {
+        return new Iterator(this);
+    }
+}
+
+class Iterator {
+    private FaceBook faceBook;
+    private java.util.Iterator iterator;
+    private String value;
+
+    public Iterator(FaceBook faceBook) {
+        this.faceBook = faceBook;
+    }
+
+    public void first() {
+        iterator = faceBook.friendsList.iterator();
+        next();
+    }
+
+    public void next() {
+        try {
+            value = (String)iterator.next();
+        } catch (NoSuchElementException ex) {
+            value =  null;
+        }
+    }
+
+    public boolean hasNext() {
+        return value != null;
+    }
+
+    public String currentValue() {
+        return value;
     }
 }
