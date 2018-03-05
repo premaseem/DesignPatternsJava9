@@ -1,0 +1,31 @@
+Intent
+Explicitly separate the notion of "algorithm" from that of "data structure".
+Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+The key idea is to take the responsibility for access and traversal out of the aggregate object and put it into an Iterator object that defines a standard traversal protocol.
+
+
+Problem solved by pattern
+Need to "abstract" the traversal of wildly different data structures so that algorithms can be defined that are capable of interfacing with each transparently.
+
+
+
+"An aggregate object such as a list should give you a way to access its elements without exposing its internal structure. Moreover, you might want to traverse the list in different ways, depending on what you need to accomplish. But you probably don't want to bloat the List interface with operations for different traversals, even if you could anticipate the ones you'll require. You might also need to have more than one traversal pending on the same list." And, providing a uniform interface for traversing many types of aggregate objects (i.e. polymorphic iteration) might be valuable.
+
+The Iterator pattern lets you do all this. The key idea is to take the responsibility for access and traversal out of the aggregate object and put it into an Iterator object that defines a standard traversal protocol.
+
+The Iterator abstraction is fundamental to an emerging technology called "generic programming". This strategy seeks to explicitly separate the notion of "algorithm" from that of "data structure". The motivation is to: promote component-based development, boost productivity, and reduce configuration management.
+
+Key Notes on Iterator in Java:
+Iterator in Java basically is used to support generics thereby making it mandatory to make use of the Generic version of Iterator and not the Iterator with raw type.
+In case the objects need to be removed from the Collection, in that case do not make use of for-each loop. Instead one can make use of Iterator's remove() method to avoid any ConcurrentModificationException.
+As far as Iterating over collection with the help of Iterator concerned, it is subject to ConcurrentModificationException if Collection is modified after Iteration started. However this is meant to take place only in case of fail-fast Iterators.
+We have fail-fast and fail-safe type of Iterators in Java and you need to check for the difference between these types.
+List collection type is also known to supports ListIterator that comprises of add() method so as to incorporate elements in collection at the time of iteration. Difference between Iterator and ListIterator has also been discussed above.
+
+
+Read more: http://mrbool.com/how-to-create-iterator-in-java/26422#ixzz3DMNSrEMN
+
+
+External vs Internal Iterator
+
+When the client controls the iteration sequence and index position then it is called as the external iterator. Otherwise if the iterator controls the traversal then it is called internal iterator. On external iterator, the design is that the invoking client code should explicitly invoke the method to move the pointer to next element. For internal iterator, when an element is accessed, after access the pointer will be automatically moved to next index by the iterator. In general internal iterators are easier to use than the external iterators.
