@@ -1,0 +1,16 @@
+The state pattern, which closely resembles Strategy Pattern, is a behavioral software design pattern, also known as the objects for states pattern. This pattern is used in computer programming to encapsulate varying behavior for the same routine based on an object's state object. This can be a cleaner way for an object to change its behavior at runtime without resorting to large monolithic conditional statements. 
+In State pattern, we create objects which represent various states and a context object whose behavior varies as its state object changes.
+
+Problem solved by State pattern
+
+A monolithic object's behavior is a function of its state, and it must change its behavior at run-time depending on that state. Or, an application is characterixed by large and numerous case statements that vector flow of control based on the state of the application.
+
+Different between State and Strategy 
+Strategy Pattern is used when the whole algorithm is changed to another algorithm and the client is responsible for that, whereas, in State Pattern, the class itself manages the strategy based on the state.
+
+Two patterns are pretty similar in practice, and the defining difference between them tends to vary depending on who you ask. Some popular choices are:
+
+States store a reference to the context object that contains them. Strategies do not.
+States are allowed to replace themselves (IE: to change the state of the context object to something else), while Strategies are not.
+Strategies are passed to the context object as parameters, while States are created by the context object itself.
+Strategies only handle a single, specific task, while States provide the underlying implementation for everything (or most everything) the context object does.
