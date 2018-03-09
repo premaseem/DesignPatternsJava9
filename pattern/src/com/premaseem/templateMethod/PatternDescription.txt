@@ -1,0 +1,27 @@
+Template Method Fruit Juice example defines a recipe (with exact steps and quantity) to prepare the drink which is kept in the extract class. However the flavor of the fruit Juice can be changed by it subclasses by overriding (which is defined as hooks/abstractor in parent abstract class).
+
+Intent:
+Define the skeleton of an algorithm in an operation, deferring some steps to client subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+Base class declares algorithm 'placeholders', and derived classes implement the placeholders.
+
+
+Problem:
+Two different components have significant similarities, but demonstrate no reuse of common interface or implementation. If a change common to both components becomes necessary, duplicate effort must be expended.
+
+Definition:
+Template method design pattern is to define an algorithm as skeleton of operations and leave the details to be implemented by the child classes. The overall structure and sequence of the algorithm is preserved by the parent class.
+
+
+The component designer decides which steps of an algorithm are invariant (or standard), and which are variant (or customizable). The invariant steps are implemented in an abstract base class, while the variant steps are either given a default implementation, or no implementation at all. The variant steps represent "hooks", or "placeholders", that can, or must, be supplied by the component's client in a concrete derived class.
+
+The component designer mandates the required steps of an algorithm, and the ordering of the steps, but allows the component client to extend or replace some number of these steps.
+
+Template Method is used prominently in frameworks. Each framework implements the invariant pieces of a domain's architecture, and defines "placeholders" for all necessary or interesting client customization options. In so doing, the framework becomes the "center of the universe", and the client customizations are simply "the third rock from the sun". This inverted control structure has been affectionately labelled "the Hollywood principle" - "don't call us, we'll call you".
+
+
+
+Rules of thumb:
+Strategy is like Template Method except in its granularity.
+Template Method uses inheritance to vary part of an algorithm. Strategy uses delegation to vary the entire algorithm.
+Strategy modifies the logic of individual objects. Template Method modifies the logic of an entire class.
+Factory Method is a specialization of Template Method.
