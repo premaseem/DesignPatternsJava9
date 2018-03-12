@@ -13,24 +13,24 @@ import com.premaseem.observer.ShareTraderObserver;
 
 public class GoogleShares implements SharePriceObservable{
 
-	public ArrayList<ShareTraderObserver> shareBrokers = new ArrayList<ShareTraderObserver>();
+	public ArrayList<ShareTraderObserver> shareTraders = new ArrayList<ShareTraderObserver>();
 	private Integer currentMarketPrice=0;
 	
 	@Override
 	public void addObserver(ShareTraderObserver shareTraderObserver) {
-		shareBrokers.add(shareTraderObserver);
+		shareTraders.add(shareTraderObserver);
 		
 	}
 
 	@Override
 	public void removeObserver(ShareTraderObserver shareTraderObserver) {
-		shareBrokers.remove(shareTraderObserver);
+		shareTraders.remove(shareTraderObserver);
 		
 	}
 
 	@Override
 	public void notifyObservers() {
-	for(ShareTraderObserver shareBroker :shareBrokers){
+	for(ShareTraderObserver shareBroker : shareTraders){
 		shareBroker.notifyCurrentPrice(getCurrentMarketPrice()," Google Inc. ");
 	} 
 		
