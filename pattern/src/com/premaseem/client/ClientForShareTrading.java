@@ -22,10 +22,10 @@ public class ClientForShareTrading {
         int repeatRunFlag = 1;
         while (repeatRunFlag == 1) {
 
-            System.out.println("Share trading platform using Observer design pattern ");
+            System.out.println("Share trading platform designed using Observer design pattern ");
             System.out
-                    .println("Notification service can be turned ON / OFF for multiple companies \n ");
-            ShareTraderObserver shareBroker1 = new ShareTrader();
+                    .println("Notification service can be turned ON / OFF for multiple company's Share \n ");
+            ShareTraderObserver shareTrader = new ShareTrader();
 
             SharePriceObservable appleShares = new AppleShares();
             SharePriceObservable googleShares = new GoogleShares();
@@ -35,9 +35,9 @@ public class ClientForShareTrading {
             System.out.println("Press 1 for yes and 0 or other digits for no ");
             int appleShareWatch = scan.nextInt();
             if (appleShareWatch == 1) {
-                appleShares.addObserver(shareBroker1);
+                appleShares.addObserver(shareTrader);
             } else {
-                appleShares.removeObserver(shareBroker1);
+                appleShares.removeObserver(shareTrader);
             }
 
             System.out
@@ -45,9 +45,9 @@ public class ClientForShareTrading {
             System.out.println("Press 1 for yes and 0 or other digits for no ");
             int googleShareWatch = scan.nextInt();
             if (googleShareWatch == 1) {
-                googleShares.addObserver(shareBroker1);
+                googleShares.addObserver(shareTrader);
             } else {
-                googleShares.removeObserver(shareBroker1);
+                googleShares.removeObserver(shareTrader);
             }
 
             System.out.println("Simulating price change in Stock Market ^^--__-_-^^  ");
