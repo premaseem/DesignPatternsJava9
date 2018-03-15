@@ -9,28 +9,29 @@ public class ClientForEmployeeIterator {
 		EmployeeManger employeeManager = new EmployeeManger();
 
 		System.out
-		        .println("This is Iterator Pattern example where you can list all the male / female emplyee list using iterators. The data structure details are abstraced behind the iterator interface ");
+		        .println("This is Iterator Pattern example where you can list all the male / female employee list using iterators. " +
+						"The data structure details are abstracted behind the iterator interface ");
 
-		employeeManager.addEmployee(new Employee("aseem1", "M"));
-		employeeManager.addEmployee(new Employee("Meera1", "f"));
-		employeeManager.addEmployee(new Employee("aseem2", "M"));
-		employeeManager.addEmployee(new Employee("sony1", "Mf"));
-		employeeManager.addEmployee(new Employee("Meera2", "f"));
-		employeeManager.addEmployee(new Employee("Meera3", "f"));
-		employeeManager.addEmployee(new Employee("Meeralast", "f"));
-		employeeManager.addEmployee(new Employee("sony2", "fM"));
-		employeeManager.addEmployee(new Employee("aseem1", "m"));
-		employeeManager.addEmployee(new Employee("aseemlast", "m"));
+		employeeManager.addEmployee(new Employee("name1", "M"));
+		employeeManager.addEmployee(new Employee("name2", "f"));
+		employeeManager.addEmployee(new Employee("name3", "M"));
+		employeeManager.addEmployee(new Employee("name4", "Mf"));
+		employeeManager.addEmployee(new Employee("name5", "f"));
+		employeeManager.addEmployee(new Employee("name6", "f"));
+		employeeManager.addEmployee(new Employee("name7", "fM"));
+		employeeManager.addEmployee(new Employee("name8", "m"));
+		employeeManager.addEmployee(new Employee("name9", "m"));
+		employeeManager.addEmployee(new Employee("name10", "f"));
 
-		employeeManager.employeeMap.put(1,new Employee("aseem1", "M"));
-		employeeManager.employeeMap.put(2,new Employee("aseem2", "F"));
-		employeeManager.employeeMap.put(3,new Employee("aseem3", "M"));
-		employeeManager.employeeMap.put(1,new Employee("aseem4", "F"));
+		employeeManager.employeeMap.put(1,new Employee("name1", "M"));
+		employeeManager.employeeMap.put(2,new Employee("name2", "F"));
+		employeeManager.employeeMap.put(3,new Employee("name3", "M"));
+		employeeManager.employeeMap.put(1,new Employee("name4", "F"));
 		
-		MaleEmplyeeIterator maleEmployeeIterator = employeeManager.getMaleEmployeeIterator();
+		MaleEmployeeIterator maleEmployeeIterator = employeeManager.getMaleEmployeeIterator();
 		printEmployeeList(maleEmployeeIterator);
 		
-		FeMaleEmplyeeIterator feMaleEmployeeIterator = employeeManager.getFeMaleEmployeeIterator();
+		FeMaleEmployeeIterator feMaleEmployeeIterator = employeeManager.getFeMaleEmployeeIterator();
 		printEmployeeList(feMaleEmployeeIterator);
 		
 		Iterator<Employee> allEmployeeIterator = employeeManager.getAllEmployeeIterator();

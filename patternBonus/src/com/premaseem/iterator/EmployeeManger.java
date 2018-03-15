@@ -9,27 +9,27 @@ import java.util.Map.Entry;
 
 public class EmployeeManger {
 
-	List<Employee> emplyeelist = new ArrayList<Employee>();
+	List<Employee> employeelist = new ArrayList<Employee>();
 	Map<Integer, Employee> employeeMap = new HashMap<Integer, Employee>();
 
 	void addEmployee(Employee emp) {
-		emplyeelist.add(emp);
+		employeelist.add(emp);
 	}
 
 	boolean removeEmployee(Employee emp) {
-		return emplyeelist.remove(emp);
+		return employeelist.remove(emp);
 	}
 
-	MaleEmplyeeIterator getMaleEmployeeIterator() {
-		return new MaleEmplyeeIterator(emplyeelist);
+	MaleEmployeeIterator getMaleEmployeeIterator() {
+		return new MaleEmployeeIterator(employeelist);
 	}
 
-	FeMaleEmplyeeIterator getFeMaleEmployeeIterator() {
-		return new FeMaleEmplyeeIterator(emplyeelist);
+	FeMaleEmployeeIterator getFeMaleEmployeeIterator() {
+		return new FeMaleEmployeeIterator(employeelist);
 	}
 
 	Iterator<Employee> getAllEmployeeIterator() {
-		return emplyeelist.iterator();
+		return employeelist.iterator();
 	}
 
 	public Iterator<Entry<Integer, Employee>> printEmployeeMap() {
