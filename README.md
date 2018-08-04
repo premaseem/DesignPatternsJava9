@@ -14,6 +14,9 @@ This repository has several branches and each branch contains code of a design p
 To look at code of Decorator pattern you might have to switch to branch decorator pattern link: 
 https://github.com/premaseem/DesignPatternsJava9/tree/decorator-pattern
 
+### Links for useful resources mentioned in the course: 
+https://github.com/premaseem/DesignPatternsJava9/blob/master/Useful%20Links%20for%20the%20course.pdf
+
 ### Authors blog on design patterns:
 https://premaseem.wordpress.com/category/computers/design-patterns/
 
