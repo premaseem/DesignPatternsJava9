@@ -6,6 +6,7 @@ https://www.packtpub.com/application-development/learn-design-patterns-java-9-vi
 
 ## Course introduction Video
 [![Course introduction video ](http://img.youtube.com/vi/U9jz3omyb_Y/0.jpg)](https://www.youtube.com/watch?v=U9jz3omyb_Y&feature=youtu.be)
+
 Click to play video 
 
 ### Repository over view
@@ -26,8 +27,6 @@ https://premaseem.wordpress.com/category/computers/design-patterns/
 
 ### Software Design pattern community face book page:
 https://www.facebook.com/DesignPatternGuru/
-
-
 
 ### Course Overview:
 Learn and master common design patterns in Java , and become an efficient programmer.
