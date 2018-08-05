@@ -18,6 +18,7 @@ This repository has several branches and each branch contains code of a design p
 ##### Example: 
 To look at code of Decorator pattern you might have to switch to branch decorator pattern link: 
 https://github.com/premaseem/DesignPatternsJava9/tree/decorator-pattern
+![switch branch](https://github.com/premaseem/DesignPatternsJava9/blob/master/switch-branch.png "Switch Branch")
 
 ### Links for useful resources mentioned in the course: 
 https://github.com/premaseem/DesignPatternsJava9/blob/master/Useful%20Links%20for%20the%20course.pdf
