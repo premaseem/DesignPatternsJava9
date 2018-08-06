@@ -24,7 +24,7 @@ https://premaseem.wordpress.com/category/computers/design-patterns/
 https://www.facebook.com/DesignPatternGuru/
 
 ### Note: 
-##### This code base will work on Java 9 and above versions. 
-##### Diagrams folders carry UML diagrams
-##### pattern folder has code of primary example 
-##### patternBonus folder has code of secondary or bonus example :+1 
+* This code base will work on Java 9 and above versions. 
+* Diagrams folders carry UML diagrams
+* pattern folder has code of primary example 
+* patternBonus folder has code of secondary or bonus example :+1 
