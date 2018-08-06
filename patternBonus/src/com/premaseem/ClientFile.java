@@ -13,8 +13,8 @@ public class ClientFile {
 		int repeatRunFlag = 1;
 		while (repeatRunFlag == 1) {
 			System.out.println("Which party do you want to host ");
-			System.out.println("press 1 for Week end party ");
-			System.out.println("press 2 for Week day party ");
+			System.out.println("press 1 for Loud party ");
+			System.out.println("press 2 for Silent party ");
 			int tvType = scan.nextInt();
 			if (tvType == 1) {
 				party = new LoudParty();
