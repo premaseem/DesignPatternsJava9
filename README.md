@@ -29,8 +29,7 @@ https://premaseem.wordpress.com/category/computers/design-patterns/
 ### Software Design pattern community face book page:
 https://www.facebook.com/DesignPatternGuru/
 
-### Authors profile:  http://in.linkedin.com/in/premaseem
-![ http://in.linkedin.com/in/premaseem](https://github.com/premaseem/DesignPatternsJava9/blob/master/linkedin.png " http://in.linkedin.com/in/premaseem")
+### ![ http://in.linkedin.com/in/premaseem](https://github.com/premaseem/DesignPatternsJava9/blob/master/linkedin.png "http://in.linkedin.com/in/premaseem") Profile:  http://in.linkedin.com/in/premaseem
 
 ### Course Overview:
 Learn and master common design patterns in Java , and become an efficient programmer.
