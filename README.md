@@ -1,4 +1,4 @@
-# What is Interpreter Design Pattern 
+# What is Iterator Design Pattern 
 Iterator Design Pattern enables to get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation.
 
 ## Diagram
@@ -6,7 +6,7 @@ Iterator Design Pattern enables to get a way to access the elements of a collect
 
 ![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/iterator-pattern/diagrams/IteratorPatternSequenceDiagram.png "Diagram")
 
-### When to use Interpreter Design Pattern 
+### When to use Iterator Design Pattern 
 * When there is a need to take the responsibility for access and traversal out of the aggregate / collection object and define a standard traversal protocol.
 * Iterator pattern is widely used in Java Collection Framework. 
 
