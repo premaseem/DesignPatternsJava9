@@ -1,5 +1,5 @@
 # What is Interpreter Design Pattern 
-Interpreter pattern provides a way to evaluate language grammar or expression.
+Iterator Design Pattern enables to get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation.
 
 ## Diagram
 ![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/iterator-pattern/diagrams/Iterator%20Design%20Pattern%20class%20diagram.jpeg "Diagram")
@@ -7,9 +7,8 @@ Interpreter pattern provides a way to evaluate language grammar or expression.
 ![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/iterator-pattern/diagrams/IteratorPatternSequenceDiagram.png "Diagram")
 
 ### When to use Interpreter Design Pattern 
-Specialized database query languages such as SQL.
-Specialized computer languages that are often used to describe communication protocols.
-Voice command based apps 
+* When there is a need to take the responsibility for access and traversal out of the aggregate / collection object and define a standard traversal protocol.
+* Iterator pattern is widely used in Java Collection Framework. 
 
 ### Learn Design Patterns with Java by Aseem Jain
 This repository contains working project code used in video Course by Packt Publication with title "Learn Design Patterns with Java " authored by "Aseem Jain".
