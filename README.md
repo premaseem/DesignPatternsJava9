@@ -9,6 +9,10 @@ https://www.packtpub.com/application-development/learn-design-patterns-java-9-vi
 
 Click to play video 
 
+
+### ![ http://in.linkedin.com/in/premaseem](https://github.com/premaseem/DesignPatternsJava9/blob/master/linkedin.png "http://in.linkedin.com/in/premaseem") Profile:  http://in.linkedin.com/in/premaseem
+
+
 ### Repository over view
 This course exposes you to a very rich github code repository which has around 50 different working code projects. 
 Code is organized in separate branches, which means all code related to singleton design pattern is in single-pattern branch and all code related observer pattern is observer-pattern branch. Each branch has related diagrams in the branch. The commit history also helps you evovle the code. You are supposed to clone or download the code base and exectue it locally or play with it for deeper learning. You can own the repo by forking it and modify code as much as you want. Remember the rule, more you code better you learn ;-)
@@ -28,8 +32,6 @@ https://premaseem.wordpress.com/category/computers/design-patterns/
 
 ### Software Design pattern community face book page:
 https://www.facebook.com/DesignPatternGuru/
-
-### ![ http://in.linkedin.com/in/premaseem](https://github.com/premaseem/DesignPatternsJava9/blob/master/linkedin.png "http://in.linkedin.com/in/premaseem") Profile:  http://in.linkedin.com/in/premaseem
 
 ### Course Overview:
 Learn and master common design patterns in Java , and become an efficient programmer.
@@ -105,4 +107,8 @@ This course is for those programmers/developers who have a basic knowledge of OO
 * Anti Patterns
 * Resources for Deeper Learning
 
-Note: This code base will work on Java 9 and above versions. 
+### Note: 
+* This code base will work on Java 9 and above versions. 
+* `diagrams` folders carry UML diagrams.
+* `pattern` folder has code of primary example. 
+* `patternBonus` folder has code of secondary or bonus example. 
