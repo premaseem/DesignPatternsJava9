@@ -2,11 +2,11 @@
 Command encapsulate all information needed to perform an action. It allows the requester of a particular action to be decoupled from the object that performs the action.
 
 ## Diagram
-![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/command-pattern/diagrams/template-method-Pattern-class-diagram.jpeg "Diagram")
+![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/command-pattern/diagrams/Command%20Design%20Pattern%20class%20diagram.jpeg "Diagram")
 
-![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/command-pattern/diagrams/Template-method-Design-Pattern-generic.jpeg "Diagram")
+![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/command-pattern/diagrams/Command-Design-Pattern-general%20-%20Page%201.png "Diagram")
 
-![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/command-pattern/diagrams/template-method-sequence.png "Diagram")
+![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/command-pattern/diagrams/command%20sequence%20diagram.png "Diagram")
 
 ### When to use Command Design Pattern 
 The invoker should be decoupled from the object handling the invocation.
