@@ -17,6 +17,8 @@ This repository contains working project code used in video Course by Packt Publ
 ### Course link: 
 https://www.packtpub.com/application-development/learn-design-patterns-java-9-video
 
+### ![ http://in.linkedin.com/in/premaseem](https://github.com/premaseem/DesignPatternsJava9/blob/master/linkedin.png "http://in.linkedin.com/in/premaseem") Profile:  http://in.linkedin.com/in/premaseem
+
 ### Authors blog on design patterns:
 https://premaseem.wordpress.com/category/computers/design-patterns/
 
