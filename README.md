@@ -2,7 +2,7 @@
 The singleton pattern is a GOF creational design pattern that restricts the instantiation of a class to single object. This is useful when exactly one object is needed to coordinate actions across the system.
 
 ## Diagram
-![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/decorator-pattern/diagrams/Decorator%20Pattern%20class%20diagram.jpeg "Diagram")
+![Diagram](https://github.com/premaseem/DesignPatternsJava9/blob/singleton/diagrams/singleton%20pattern%20diagram.png "Diagram")
 
 ### When to use Singleton Design Pattern 
 Application needs one, and only one, instance of an object. Additionally, lazy initialization and global access are necessary and state of objects needs to be shared accross application. Logger and Print Spooler are candidate application for singleton. 
