@@ -12,5 +12,19 @@ A loosely-coupled class can be consumed and tested independently of other (concr
 
 Interfaces are a powerful tool to use for decoupling. Classes can communicate through interfaces rather than other concrete classes, and any class can be on the other end of that communication simply by implementing the interface.
 
-# DesignPatternsJava9
-This repo consists Gang of Four Design patterns code on Java 9. Each branch in the repository has code of 1 design pattern. Switch repository to try out different design patterns.
+# The fragile base-class problem
+Base classes are considered fragile because you can modify a base class in a seemingly safe way, but this new behavior, when inherited by the derived classes, might cause the derived classes to malfunction. You can't tell whether a base-class change is safe simply by examining the base class's methods in isolation; you must look at (and test) all derived classes as well. Moreover, you must check all code that uses both base-class and derived-class objects too, since this code might also be broken by the new behavior. A simple change to a key base class can render an entire program inoperable.
+
+### Learn Design Patterns with Java by Aseem Jain
+This repository contains working project code used in video Course by Packt Publication with title "Learn Design Patterns with Java " authored by "Aseem Jain".
+
+### Course link: 
+https://www.packtpub.com/application-development/learn-design-patterns-java-9-video
+
+### ![ http://in.linkedin.com/in/premaseem](https://github.com/premaseem/DesignPatternsJava9/blob/master/linkedin.png "http://in.linkedin.com/in/premaseem") Profile:  http://in.linkedin.com/in/premaseem
+
+### Authors blog on design patterns:
+https://premaseem.wordpress.com/category/computers/design-patterns/
+
+### Software Design pattern community face book page:
+https://www.facebook.com/DesignPatternGuru/
