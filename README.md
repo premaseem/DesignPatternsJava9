@@ -103,7 +103,7 @@ This course is for those programmers/developers who have a basic knowledge of OO
 
 #### 7. Conclusion
 * When to Use Which Design Pattern
-* Mini-project
+* Mini-project (Requirements document - https://github.com/premaseem/DesignPatternsJava9/blob/master/Final_assignment.md)
 * Anti Patterns
 * Resources for Deeper Learning
 
